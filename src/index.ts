@@ -1,4 +1,4 @@
-const app = require('./server')
+import app from './server'
 
 // creates and starts a server for our API on a defined port
 app.listen(3001, () => {
