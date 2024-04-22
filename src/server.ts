@@ -18,9 +18,7 @@ app.use(express.urlencoded({ extended: true }))
 // respond to a get request with a route of /
 // app.[method]([route], [route handler]) is the syntax
 app.get('/', (req, res, next) => {
-  setTimeout(() => {
-    next(new Error('hello'))
-  }, 1)
+  res.json({ message: 'hello' })
 })
 
 // all routes from router will start with /api....
